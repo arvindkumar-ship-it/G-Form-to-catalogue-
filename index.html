@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Catalogue</title>
+  <link rel="icon" href="assets/UII.png" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400&family=Kalnia:wdth,wght@100..200,100..900&family=Klee+One:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <img src="assets/green-forest.png" alt="" class="bg-image" />
+
+    <nav class="navbar">
+      <div class="navbar-logo-pill">CATALOGUE</div>
+      <div class="navbar-nav-pill">
+        <div class="nav-items">
+          <a href="#catalogue" class="nav-link">GALLERY</a>
+        </div>
+        <span class="live-pill" id="liveStatus">
+          <span class="live-dot"></span>
+          <span id="liveStatusText">Live</span>
+        </span>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero-title">Submission Catalogue</h1>
+      <p class="hero-subtitle">Every registered design, straight from the form — updated automatically.</p>
+
+      <div class="toolbar">
+        <input
+          id="searchInput"
+          type="text"
+          class="search-input"
+          placeholder="Search by name or ID…"
+        />
+        <span class="count-pill" id="countPill">0 entries</span>
+      </div>
+    </header>
+
+    <main id="catalogue" class="catalogue-wrap">
+      <div id="stateMessage" class="state-message">Loading submissions…</div>
+      <div id="grid" class="grid"></div>
+    </main>
+
+    <footer class="footer">
+      <p>Synced from Google Sheets · refreshes every few seconds</p>
+    </footer>
+  </div>
+
+  <!-- Lightbox for viewing full-size images -->
+  <div id="lightbox" class="lightbox hidden">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
