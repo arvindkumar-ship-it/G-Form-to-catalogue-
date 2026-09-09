@@ -27,6 +27,6 @@ const CONFIG = {
   IMAGE_PROXY_URL: "https://script.google.com/macros/s/AKfycbzhpyzU2DNciJCYqu4fMA11-bClgFz90ToejAoiI5CYq5YPG_KA5HfTPAnYmlENrseBlw/exec",
 
   // 3. How often to re-check the sheet for new submissions (in milliseconds).
-  //    10000 = 10 seconds. Lower = more "live", but more requests to Google.
-  POLL_INTERVAL_MS: 10000,
+  //    20000 = 20 seconds. Lower = more "live", but more requests to Google.
+  POLL_INTERVAL_MS: 20000,
 };
