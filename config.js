@@ -8,7 +8,7 @@ const CONFIG = {
   //    File → Share → Publish to web → choose the response sheet/tab → CSV → Publish
   //    Paste the link it gives you below.
   SHEET_CSV_URL:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3xze28qUO-BIUPrazSsdc37p2qkNeWGSYSjWLbuq1lc9PoH9gsuHhhlpc4kgJW6oKJwvZWKm9mb65/pub?gid=583690830&single=true&output=csv",
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSTAGTISLbfKUEZPQYFaxW4k_4eETM8yme2eEWljSljdEjjwioSIKuWEMcdv0hcPWVYIR-KnzFKhxQI/pubhtml",
 
   // 2. Exact column headers as they appear in your Google Sheet
   //    (these come from your Google Form question titles).
