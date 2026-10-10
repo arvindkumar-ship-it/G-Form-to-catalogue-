@@ -156,3 +156,5 @@ All colors/fonts live at the top of `style.css` as CSS variables:
 
 Swap `assets/green-forest.png` for a different background image (keep the
 same filename, or update the `<img src>` in `index.html`).
+
+Audit repair scope, reproducible checks and remaining limitations: [AUDIT_FIXES.md](AUDIT_FIXES.md).
